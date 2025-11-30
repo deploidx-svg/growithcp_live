@@ -1,29 +1,35 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import Services from './pages/Services';
-import Portfolio from './pages/Portfolio';
-import About from './pages/About';
-import Blog from './pages/Blog';
-import Contact from './pages/Contact';
+import NewHeader from './components/NewHeader';
+import NewFooter from './components/NewFooter';
+import NewHome from './pages/NewHome';
+import NewServices from './pages/NewServices';
+import NewPricing from './pages/NewPricing';
+import HowItWorks from './pages/HowItWorks';
+import Features from './pages/Features';
+import NewPortfolio from './pages/NewPortfolio';
+import NewFAQ from './pages/NewFAQ';
+import NewContact from './pages/NewContact';
+import Subscribe from './pages/Subscribe';
 
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-white flex flex-col">
-        <Header />
+      <div className="min-h-screen bg-black flex flex-col">
+        <NewHeader />
         <main className="flex-1">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/" element={<NewHome />} />
+            <Route path="/services" element={<NewServices />} />
+            <Route path="/pricing" element={<NewPricing />} />
+            <Route path="/how-it-works" element={<HowItWorks />} />
+            <Route path="/features" element={<Features />} />
+            <Route path="/portfolio" element={<NewPortfolio />} />
+            <Route path="/faq" element={<NewFAQ />} />
+            <Route path="/contact" element={<NewContact />} />
+            <Route path="/subscribe" element={<Subscribe />} />
           </Routes>
         </main>
-        <Footer />
+        <NewFooter />
       </div>
     </Router>
   );
