@@ -1,0 +1,30 @@
+<svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#2563eb" />
+      <stop offset="100%" stopColor="#1e40af" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="20" cy="20" r="19" fill="url(#logoGradient)" opacity="0.1" />
+
+  <!-- Main circle border -->
+  <path
+    d="M12 20C12 15.58 15.58 12 20 12C24.42 12 28 15.58 28 20C28 24.42 24.42 28 20 28C15.58 28 12 24.42 12 20Z"
+    fill="none"
+    stroke="url(#logoGradient)"
+    strokeWidth="1.5"
+  />
+
+  <!-- Plus symbol -->
+  <path
+    d="M20 16V24M16 20H24"
+    stroke="url(#logoGradient)"
+    strokeWidth="2"
+    strokeLinecap="round"
+  />
+
+  <!-- Center circle -->
+  <circle cx="20" cy="20" r="2.5" fill="url(#logoGradient)" />
+</svg>
