@@ -7,6 +7,10 @@ function Hero() {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-24 sm:pt-28 sm:pb-32">
         <div className="text-center max-w-4xl mx-auto">
+          <div className="inline-flex items-center gap-2 bg-red-100 text-red-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
+            <span className="font-semibold">Powered with AI</span>
+          </div>
+
           <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium mb-8">
             <Users className="w-4 h-4" />
             Done-For-You Website Service
