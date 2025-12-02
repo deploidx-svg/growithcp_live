@@ -11,17 +11,23 @@ function Logo({ size = 'medium', showText = true, className = '' }: LogoProps) {
     large: 'h-16'
   };
 
+  const textSizeMap = {
+    small: 'text-lg',
+    medium: 'text-xl',
+    large: 'text-2xl'
+  };
+
   return (
     <div className={`flex items-center gap-3 ${className}`}>
       <img
-        src="/grologo-removebg-preview.png"
-        alt="GrowithCP"
+        src="/cploicon copy.png"
+        alt="growthcp"
         className={`${sizeMap[size]} w-auto`}
       />
 
       {showText && (
-        <div className="font-bold tracking-tight text-xl text-slate-900">
-          GrowithCP
+        <div className={`font-bold tracking-tight ${textSizeMap[size]} text-slate-900`}>
+          growthcp
         </div>
       )}
     </div>
