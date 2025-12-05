@@ -4,20 +4,28 @@
 
 @layer base {
   body {
-    @apply bg-black text-white;
+    @apply bg-white text-gray-900;
   }
 }
 
 .glass {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(128, 0, 32, 0.03);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(128, 0, 32, 0.08);
 }
 
 .glass-dark {
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(128, 0, 32, 0.06);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(128, 0, 32, 0.12);
+}
+
+.gradient-maroon {
+  background: linear-gradient(135deg, #800020 0%, #c62f43 100%);
+}
+
+.gradient-maroon-light {
+  background: linear-gradient(135deg, #f4a8b0 0%, #ed7685 100%);
 }
